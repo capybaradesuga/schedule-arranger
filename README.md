@@ -1,0 +1,1 @@
+[![CircleCI](https://circleci.com/gh/capybaradesuga/schedule-arranger.svg?style=svg)](https://circleci.com/gh/capybaradesuga/schedule-arranger)

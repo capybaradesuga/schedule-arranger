@@ -3,7 +3,7 @@ const loader = require('./sequelize-loader');
 const Sequelize = loader.Sequelize;
 
 const Availability = loader.database.define('availabilities', {
-  candidatedId: {
+  candidateId: {
     type: Sequelize.INTEGER,
     primarykey: true,
     allowNull: false

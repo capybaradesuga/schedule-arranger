@@ -17,13 +17,13 @@ var Availability = require('./models/availability');
 var Candidate = require('./models/candidate');
 var Comment = require('./models/comment');
 User.sync().then(() => {
-  Schedule.belongsTo(User, {foreignkey: 'createdBy'});
+  Schedule.belongsTo(User, {foreignKey: 'createdBy'});
   Schedule.sync();
-  Comment.belongsTo(User, {foreignkey: 'userId'});
+  Comment.belongsTo(User, {foreignKey: 'userId'});
   Comment.sync();
-  Availability.belongsTo(User, {foreignkey: 'userId'});
+  Availability.belongsTo(User, {foreignKey: 'userId'});
   Candidate.sync().then(() => {
-    Availability.belongsTo(Candidate, {foreignkey: 'candidateId'});
+    Availability.belongsTo(Candidate, {foreignKey: 'candidateId'});
     Availability.sync();
   });
 });
